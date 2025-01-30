@@ -1,6 +1,5 @@
 package jp.co.we.travelbuddy.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -10,27 +9,79 @@ import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Preview
 
+
+/**
+*
+* @fileName    : Theme.kt
+* @author      : imseoghyeon
+* @description : テーマ設定
+*
+**/
+//　ダークテーマ
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = android_dark_primary,
+    onPrimary = android_dark_onPrimary,
+    primaryContainer = android_dark_primaryContainer,
+    onPrimaryContainer = android_dark_onPrimaryContainer,
+    secondary = android_dark_secondary,
+    onSecondary = android_dark_onSecondary,
+    secondaryContainer = android_dark_secondaryContainer,
+    onSecondaryContainer = android_dark_onSecondaryContainer,
+    tertiary = android_dark_tertiary,
+    onTertiary = android_dark_onTertiary,
+    tertiaryContainer = android_dark_tertiaryContainer,
+    onTertiaryContainer = android_dark_onTertiaryContainer,
+    error = android_dark_error,
+    errorContainer = android_dark_errorContainer,
+    onError = android_dark_onError,
+    onErrorContainer = android_dark_onErrorContainer,
+    background = android_dark_background,
+    onBackground = android_dark_onBackground,
+    surface = android_dark_surface,
+    onSurface = android_dark_onSurface,
+    surfaceVariant = android_dark_surfaceVariant,
+    onSurfaceVariant = android_dark_onSurfaceVariant,
+    outline = android_dark_outline,
+    inverseOnSurface = android_dark_inverseOnSurface,
+    inverseSurface = android_dark_inverseSurface,
+    inversePrimary = android_dark_inversePrimary,
+    surfaceTint = android_dark_surfaceTint,
+    outlineVariant = android_dark_outlineVariant,
+    scrim = android_dark_scrim,
 )
-
-private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+//　Customデフォルトテーマ
+private val customColorTheme = lightColorScheme(
+    primary = android_default_Primary,
+    onPrimary = android_default_onPrimary,
+    primaryContainer = android_default_primaryContainer,
+    onPrimaryContainer = android_default_onPrimaryContainer,
+    inversePrimary = android_default_inversePrimary,
+    secondary = android_default_secondary,
+    onSecondary = android_default_onSecondary,
+    secondaryContainer = android_default_secondaryContainer,
+    onSecondaryContainer = android_default_onSecondaryContainer,
+    tertiary = android_default_tertiary,
+    onTertiary = android_default_onTertiary,
+    tertiaryContainer = android_default_tertiaryContainer,
+    onTertiaryContainer = android_default_onTertiaryContainer,
+    background = android_default_background,
+    onBackground = android_default_onBackground,
+    surface = android_default_surface,
+    onSurface = android_default_onSurface,
+    surfaceVariant = android_default_surfaceVariant,
+    onSurfaceVariant = android_default_onSurfaceVariant,
+    surfaceTint = android_default_surfaceTint,
+    inverseSurface = android_default_inverseSurface,
+    inverseOnSurface = android_default_inverseOnSurface,
+    error = android_default_error,
+    onError = android_default_onError,
+    errorContainer = android_default_errorContainer,
+    onErrorContainer = android_default_onErrorContainer,
+    outline = android_default_outline,
+    outlineVariant = android_default_outlineVariant,
+    scrim = android_default_scrim,
 )
 
 @Composable
@@ -47,7 +98,7 @@ fun TravelBuddyTheme(
         }
 
         darkTheme -> DarkColorScheme
-        else -> LightColorScheme
+        else -> customColorTheme
     }
 
     MaterialTheme(
