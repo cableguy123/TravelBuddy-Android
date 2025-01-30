@@ -9,9 +9,6 @@ import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.tooling.preview.Preview
-
-
 /**
 *
 * @fileName    : Theme.kt
@@ -51,6 +48,7 @@ private val DarkColorScheme = darkColorScheme(
     outlineVariant = android_dark_outlineVariant,
     scrim = android_dark_scrim,
 )
+
 //　Customデフォルトテーマ
 private val customColorTheme = lightColorScheme(
     primary = android_default_Primary,

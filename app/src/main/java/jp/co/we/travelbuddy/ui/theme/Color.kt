@@ -8,6 +8,7 @@ import androidx.compose.ui.graphics.Color
 * @description : カラー追加
 *
 **/
+
 //　デフォルトカラー
 val android_default_Primary = Color(0xFF003366)
 val android_default_onPrimary = Color(0xFFFFFFFF)
@@ -66,7 +67,6 @@ val android_dark_outline = Color(0xFF8b9389)
 val android_dark_inverseOnSurface = Color(0xFF1F1B16)
 val android_dark_inverseSurface = Color(0xFFEAE1D9)
 val android_dark_inversePrimary = Color(0xFF825500)
-val android_dark_shadow = Color(0xFF000000)
 val android_dark_surfaceTint = Color(0xFFFFB951)
 val android_dark_outlineVariant = Color(0xFF4F4539)
 val android_dark_scrim = Color(0xFF000000)
